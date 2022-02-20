@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Container from "@material-ui/core/Container";
 import CustomInput from "./components/CustomInput";
 import CustomButton from "./components/CustomButton";
 import { API_KEY } from "./config";
@@ -32,11 +31,11 @@ const WeatherSearch = () => {
   };
 
   return (
-    <Container>
+    <>
       <CustomInput inputValue={inputValue} setInputValue={getInputValue} />
       <CustomButton onClick={listenApi}>FETCH API</CustomButton>
       <CustomButton onClick={showFetchResult}>SHOW RESULT</CustomButton>
-    </Container>
+    </>
   );
 };
 

@@ -6,21 +6,22 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: theme.spacing(4),
-    paddingTop: theme.spacing(3),
+    margin: "auto",
+    padding: "10px",
     display: "flex",
-    width: "320px",
-    flexDirection: "column",
+    width: "900px",
+    flexDirection: "row",
     alignItems: "center",
-    height: "445px",
+    height: "100%",
     border: "2px solid",
     boxShadow: "2px 2px #00f0ff",
   },
 }));
 
-const MainContainer = ({ children }) => {
+const MenuContainer = ({ children }) => {
     const styles = useStyles();
 
   return <Container className={styles.root} component={Card}>{children}</Container>;
 };
 
-export default MainContainer;
+export default MenuContainer;
