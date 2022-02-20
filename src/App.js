@@ -1,13 +1,15 @@
 import React from "react";
-import MainContainer from "./components/MainContainer";
+import MenuContainer from "./components/MenuContainer";
 import WeatherSearch from "./WeatherSearch";
+import WeatherByGeo from "./WeatherByGeo";
 
 const App = () => {
   return (
     <>
-      <MainContainer>
+      <MenuContainer>
         <WeatherSearch />
-      </MainContainer>
+        <WeatherByGeo />
+      </MenuContainer>
     </>
   );
 };
